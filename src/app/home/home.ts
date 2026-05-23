@@ -23,15 +23,15 @@ interface SocialLink {
 })
 export class Home {
   socialLinks: SocialLink[] = [
-    { label: 'X', url: 'https://twitter.com/itsanandnihal', icon: 'X' },
+    { label: 'X', url: 'https://twitter.com/itsanandnihal', icon: '𝕏' },
     { label: 'Email', url: 'mailto:itsanandnihal@gmail.com', icon: '✉️' }
   ];
 
   linkButtons: LinkButton[] = [
-    { title: 'Linkedin', url: 'https://www.linkedin.com/in/itsanandnihal', icon: '🔗' },
-    { title: 'Artstation [Portfolio]', url: 'https://www.artstation.com/itsanandnihal', icon: '🎨' },
-    { title: 'My 3D Models | CGTrader', url: 'https://www.cgtrader.com/itsanandnihal', icon: '🧩' },
-    { title: '3D Models | gumroad (3d/2d)', url: 'https://gumroad.com/itsanandnihal', icon: '🛒' }
+    { title: 'Linkedin', url: 'https://www.linkedin.com/in/itsanandnihal', icon: '💼' },
+    { title: 'Artstation [Portfolio]', url: 'https://www.artstation.com/itsanandnihal', icon: '🖼️' },
+    { title: 'My 3D Models | CGTrader', url: 'https://www.cgtrader.com/itsanandnihal', icon: '�' },
+    { title: '3D/2D Models | Gumroad ', url: 'https://gumroad.com/itsanandnihal', icon: '⬛' }
   ];
 
   async shareProfile(): Promise<void> {
