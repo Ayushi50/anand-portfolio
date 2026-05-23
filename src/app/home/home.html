@@ -22,22 +22,14 @@
 
     <div class="button-list">
       <a *ngFor="let item of linkButtons"
-         [routerLink]="item.route"
+         [href]="item.url"
+         target="_blank"
+         rel="noreferrer"
          class="link-button">
         <span class="button-icon">{{ item.icon }}</span>
         <span>{{ item.title }}</span>
         <span class="more">⋮</span>
       </a>
-    </div>
-
-    <div class="footer-links">
-      <a href="#">Cookie Preferences</a>
-      <span>·</span>
-      <a href="#">Report</a>
-      <span>·</span>
-      <a href="#">Privacy</a>
-      <span>·</span>
-      <a href="#">Explore</a>
     </div>
   </div>
 </div>

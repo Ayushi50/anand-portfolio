@@ -4,7 +4,7 @@ import { RouterModule } from '@angular/router';
 
 interface LinkButton {
   title: string;
-  route: string;
+  url: string;
   icon: string;
 }
 
@@ -24,15 +24,14 @@ interface SocialLink {
 export class Home {
   socialLinks: SocialLink[] = [
     { label: 'X', url: 'https://twitter.com/itsanandnihal', icon: 'X' },
-    { label: 'LinkedIn', url: 'https://www.linkedin.com/in/itsanandnihal', icon: 'in' },
-    { label: 'Email', url: 'mailto:itsanandnihal@example.com', icon: '✉️' }
+    { label: 'Email', url: 'mailto:itsanandnihal@gmail.com', icon: '✉️' }
   ];
 
   linkButtons: LinkButton[] = [
-    { title: 'Linkedin', route: '/linkedin', icon: '🔗' },
-    { title: 'Artstation', route: '/artstation', icon: '🎨' },
-    { title: 'My 3D Models | CGTrader', route: '/cgtrader', icon: '🧩' },
-    { title: '3D Models | gumroad', route: '/gumroad', icon: '🛒' }
+    { title: 'Linkedin', url: 'https://www.linkedin.com/in/itsanandnihal', icon: '🔗' },
+    { title: 'Artstation [Portfolio]', url: 'https://www.artstation.com/itsanandnihal', icon: '🎨' },
+    { title: 'My 3D Models | CGTrader', url: 'https://www.cgtrader.com/itsanandnihal', icon: '🧩' },
+    { title: '3D Models | gumroad (3d/2d)', url: 'https://gumroad.com/itsanandnihal', icon: '🛒' }
   ];
 
   async shareProfile(): Promise<void> {
