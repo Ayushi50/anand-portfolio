@@ -1,0 +1,43 @@
+<div class="page-shell">
+  <img src="assets/background.jpg" alt="Background" class="background-image" />
+  <div class="content-card">
+    <div class="top-bar">
+      <button class="top-icon" type="button" (click)="shareProfile()" aria-label="Share profile">📤</button>
+    </div>
+
+    <img src="assets/profile.jpeg" alt="Profile" class="profile-photo" />
+
+    <h1 class="handle">@itsanandnihal</h1>
+    <p class="subtitle">3d Artist</p>
+
+    <div class="social-row">
+      <a *ngFor="let social of socialLinks"
+         [href]="social.url"
+         target="_blank"
+         rel="noreferrer"
+         class="social-link">
+        <span class="social-icon">{{ social.icon }}</span>
+      </a>
+    </div>
+
+    <div class="button-list">
+      <a *ngFor="let item of linkButtons"
+         [routerLink]="item.route"
+         class="link-button">
+        <span class="button-icon">{{ item.icon }}</span>
+        <span>{{ item.title }}</span>
+        <span class="more">⋮</span>
+      </a>
+    </div>
+
+    <div class="footer-links">
+      <a href="#">Cookie Preferences</a>
+      <span>·</span>
+      <a href="#">Report</a>
+      <span>·</span>
+      <a href="#">Privacy</a>
+      <span>·</span>
+      <a href="#">Explore</a>
+    </div>
+  </div>
+</div>
